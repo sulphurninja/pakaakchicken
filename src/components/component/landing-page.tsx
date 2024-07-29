@@ -78,7 +78,7 @@ export function LandingPage() {
               </div>
               <img
                 src="https://t3.ftcdn.net/jpg/05/13/37/62/360_F_513376282_X45C2UKOQGXJyoZK2JEplrNef8Ov9dAv.jpg"
-               
+
                 alt="Hero"
                 className="mx-auto aspect-video object-cover overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square"
               />
@@ -161,8 +161,8 @@ export function LandingPage() {
                         </div>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        "Pakaak has been a game-changer for my family. The\n on-demand delivery and high-quality chicken
-                        have made\n our lives so much easier."
+                        Pakaak has been a game-changer for my family. The\n on-demand delivery and high-quality chicken
+                        have made\n our lives so much easier.
                       </p>
                       <div className="text-sm font-medium">- Mehboob, Pakaak Customer</div>
                     </div>
@@ -180,8 +180,8 @@ export function LandingPage() {
                         </div>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        "I've been using Pakaak for months and the service has\n been consistently excellent. The
-                        chicken is always\n fresh and the delivery is lightning-fast."
+                        I've been using Pakaak for months and the service has\n been consistently excellent. The
+                        chicken is always\n fresh and the delivery is lightning-fast.
                       </p>
                       <div className="text-sm font-medium">- Vikas, Pakaak Customer</div>
                     </div>
@@ -199,8 +199,8 @@ export function LandingPage() {
                         </div>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        "Pakaak has become an essential part of my weekly\n routine. The convenience and quality are
-                        unbeatable.\n Highly recommended!"
+                        Pakaak has become an essential part of my weekly\n routine. The convenience and quality are
+                        unbeatable.\n Highly recommended!
                       </p>
                       <div className="text-sm font-medium">- Aditya, Pakaak Customer</div>
                     </div>
@@ -219,7 +219,7 @@ export function LandingPage() {
                   Get Pakaak on Your Devices
                 </h2>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  
+
                   <Link
                     href="#"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
@@ -255,7 +255,7 @@ export function LandingPage() {
   )
 }
 
-function BirdIcon(props:any) {
+function BirdIcon(props: any) {
   return (
     <svg
       {...props}
@@ -280,7 +280,7 @@ function BirdIcon(props:any) {
 }
 
 
-function StarIcon(props:any) {
+function StarIcon(props: any) {
   return (
     <svg
       {...props}
@@ -300,7 +300,7 @@ function StarIcon(props:any) {
 }
 
 
-function XIcon(props:any) {
+function XIcon(props: any) {
   return (
     <svg
       {...props}
