@@ -180,7 +180,7 @@ export function LandingPage() {
                         </div>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        I've been using Pakaak for months and the service has\n been consistently excellent. The
+                        I have been using Pakaak for months and the service has\n been consistently excellent. The
                         chicken is always\n fresh and the delivery is lightning-fast.
                       </p>
                       <div className="text-sm font-medium">- Vikas, Pakaak Customer</div>
