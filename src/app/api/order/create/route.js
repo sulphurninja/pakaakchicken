@@ -13,34 +13,36 @@ export async function POST(request) {
         const savedOrder = await newOrder.save();
 
         const cashfreeResponse = await axios.post(
-            'https://test.cashfree.com/api/v2/cftoken/order',
+            'https://sandbox.cashfree.com/pg/orders',
             {
                 orderId: savedOrder._id.toString(), // Ensure ID is a string
-                orderAmount: total,
+                order_amount: total,
+                order_currency: "INR",
                 customer_details: {
+                    customer_id: "01",
                     customer_name: customerName,
                     customer_email: customerEmail,
                     customer_phone: customerPhone,
                 },
                 order_meta: {
-                    return_url: `https://pakaak.com/payment-response?order_id=${savedOrder._id}`,
+                    return_url: `https://test.cashfree.com/pgappsdemos/return.php?order_id=order_123`,
                 },
             },
             {
                 headers: {
                     'x-client-id': process.env.CASHFREE_APP_ID,
                     'x-client-secret': process.env.CASHFREE_SECRET_KEY,
+                    'x-api-version': '2021-05-21',
                     'Content-Type': 'application/json',
                 },
             }
         );
 
-        const orderToken = cashfreeResponse.data.cftoken;
-
+        const cashfreeLink = cashfreeResponse.data.payment_link;
         return NextResponse.json({
             message: "Order created successfully",
             data: savedOrder,
-            orderToken,
+            cashfreeLink
         });
     } catch (error) {
         // Log the full error response for debugging
