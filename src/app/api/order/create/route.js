@@ -23,7 +23,7 @@ export async function POST(request) {
                     customer_phone: customerPhone,
                 },
                 order_meta: {
-                    return_url: `http://localhost:3000/payment-response?order_id=${savedOrder._id}`,
+                    return_url: `https://pakaak.com/payment-response?order_id=${savedOrder._id}`,
                 },
             },
             {
