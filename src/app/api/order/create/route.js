@@ -25,7 +25,7 @@ export async function POST(request) {
                     customer_phone: customerPhone,
                 },
                 order_meta: {
-                    return_url: `https://test.cashfree.com/pgappsdemos/return.php?order_id=${savedOrder._id}`,
+                    return_url: `https://test.cashfree.com/pgappsdemos/return.php?order_id=order_123`,
                 },
             },
             {
