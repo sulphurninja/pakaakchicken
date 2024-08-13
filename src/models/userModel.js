@@ -17,6 +17,15 @@ const userSchema = new mongoose.Schema({
     address: {
         type: String,
     },
+    customerName: {
+        type: String,
+    },
+    customerEmail: {
+        type: String,
+    },
+    customerPhone: {
+        type: String,
+    },
 
 })
 
